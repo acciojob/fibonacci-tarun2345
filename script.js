@@ -1,9 +1,6 @@
-function fibonacci(n) {
+function fib(n) {
 // your code here
-	if(n==0)return 0;
-	if(n==1)return 1;
-	var fib = fibonacci(n-1)+fibonacci(n-2);
-	return fib;
+	const fib = (n) => n < 2 ? n : fib(n-1) + fib(n-2);
 }
 
 module.exports = fibonacci;
